@@ -10,3 +10,16 @@
         Veti primi: '(()]'
         Veti printa: False
 """
+x = input()
+
+open_parentheses = ['(', '[', '{']
+closed_parentheses = [')', ']', '}']
+list_x = list(x)
+
+stack = []
+
+for i in range(len(x)):
+    if x[i] in open_parentheses:
+        stack.append(x[i])
+
+

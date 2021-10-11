@@ -16,5 +16,9 @@ print(s1)
 # Adaugam valoarea 4 setului folosind metoda add()
 s1.add(4)
 
+# Adaugarea elementelor din lista in set
+for x in l1:
+    s1.add(x)
+
 # Afisam setul dupa schimbare
 print(s1)

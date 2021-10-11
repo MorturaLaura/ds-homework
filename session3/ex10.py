@@ -19,5 +19,15 @@ l2 = ['a', 'b', 'c', 'd']
 # In varaibila d1 avem un dictionar gol
 d1 = {}
 
+# O modalitate ar fi utilizand dictionary comprehension
+# d1 = {l1[i]:l2[i] for i in range(len(l1))}
+
+# O alta modalitate ar fi utilizand structura repetitiva for
+for i in range(len(l1)):
+    d1[l1[i]] = l2[i]
+
 # Afisam listele l1 si l2
 print(l1, l2)
+
+# Afisam dictionarul d1
+print(d1)

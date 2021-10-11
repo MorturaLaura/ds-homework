@@ -8,3 +8,13 @@
         Veti primi 6, veti afisa [1, 2, 3, 4, 5]
         Veti primi 5, veti afisa [1, 4, 9, 16]
 """
+
+x = int(input())
+l1 = []
+
+if x % 2 == 0:
+    l1 = [i for i in range(1, x)]
+else:
+    l1 = [i**2 for i in range(1, x)]
+
+print(l1)

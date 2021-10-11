@@ -7,3 +7,9 @@
         Veti primi: 5
         Veti printa: 'ashdj' (poate fi orice alt string)
 """
+import random
+from string import ascii_lowercase
+
+x = int(input())
+
+print(''.join(random.choice(ascii_lowercase) for i in range(x)))

@@ -6,3 +6,6 @@
         Veti primi: 'cmi'
         Veti printa: 'cmicmicmi'
 """
+
+x = input()
+print(x * 3)

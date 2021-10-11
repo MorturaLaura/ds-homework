@@ -13,3 +13,11 @@
         False
         False
 """
+x = input()
+
+while x != 'exit':
+    if int(x) % 2 == 0:
+        print(True)
+    else:
+        print(False)
+    x = input()

@@ -14,3 +14,26 @@
         Veti primi: 1232
         Veti printa: False
 """
+x = int(input())
+
+# O modalitate ar fi schimband tipul de date din numar intreg in string
+"""
+y = str(x)
+if y == y[::-1]:
+    print(True)
+else:
+    print(False)
+"""
+
+#O alta modalitate ar fi determinand inversul numarului intreg primit de la tastatura
+x_for_reverse = x
+y = 0
+while x_for_reverse != 0:
+    y = y*10 + x_for_reverse % 10
+    x_for_reverse = int(x_for_reverse/10)
+
+if y == x:
+    print(True)
+else:
+    print(False)
+

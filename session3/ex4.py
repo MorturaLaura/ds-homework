@@ -13,5 +13,8 @@ t2 = (3, 4, 5)
 # Vom converti cele 2 tupluri in liste, inainte sa le concatenam
 l1 = list(t1) + list(t2)
 
+# Inseram in lista l1 elementul 2 pe pozitia 1
+l1.insert(1, 2)
+
 # Afisam lista
 print(l1)
