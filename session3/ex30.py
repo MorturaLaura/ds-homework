@@ -12,14 +12,24 @@
 """
 x = input()
 
-open_parentheses = ['(', '[', '{']
-closed_parentheses = [')', ']', '}']
-list_x = list(x)
-
 stack = []
+ok = True
 
-for i in range(len(x)):
-    if x[i] in open_parentheses:
-        stack.append(x[i])
+parentheses = {'(': ')',
+               '{': '}',
+               '[': ']'}
+
+for i in x:
+    if i == '(' or i == '{' or i == '[':
+        stack.append(i)
+    elif i == ')' or i == '}' or i == ']':
+        value = stack.pop()
+        if parentheses[value] != i:
+            ok = False
+    else:
+        continue
+
+print(ok)
+
 
 
