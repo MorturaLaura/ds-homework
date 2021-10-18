@@ -7,6 +7,18 @@
 """
 
 
-# decorate me
+def write_output(func):
+    def wrapper(a):
+        file = open("output12.data", "w")
+        file.write(a)
+        return file.close()
+    return wrapper
+
+
+@write_output
 def f(x):
     print(x)
+
+
+f('Hello')
+

@@ -7,3 +7,10 @@
         - func('aabbcc')
             ---> 'bbccdd'
 """
+
+
+def func(s):
+    return ''.join([(chr(ord(a) + 1)) for a in s])
+
+
+print(func('aabbcc'))

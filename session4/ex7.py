@@ -12,3 +12,10 @@
     Observatii:
         - functia trebuie sa aiba MAXIM 1 linie de cod ca si body
 """
+
+
+def func(prefix, suffix, word):
+    return prefix + word + suffix
+
+
+print(func('a', 'b', 'x'))

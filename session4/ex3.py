@@ -12,4 +12,13 @@
 
 
 def func(x):
-    pass
+    l1 = []
+    i = 0
+    while i != x:
+        l1.append(i)
+        i += 1
+    return l1
+
+
+print(func(3))
+

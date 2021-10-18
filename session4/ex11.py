@@ -8,6 +8,14 @@
 """
 
 
-# decorate me
+def write_output(func):
+    def wrapper():
+        file = open("output11.data", "w")
+        file.write(func())
+        return file.close()
+    return wrapper()
+
+
+@write_output
 def f():
     return "CMI"
