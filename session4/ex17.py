@@ -19,3 +19,22 @@
             cmicmi
             b
 """
+
+import random
+import string
+
+
+def write_output(func):
+    def wrapper(*args):
+        file = open("output17.data", "a")
+        file.write(func(*args))
+        return file.close()
+    return wrapper
+
+
+@write_output
+def f(x):
+    return ''.join(random.choice(string.ascii_lowercase) for _ in range(x)) + '\n'
+
+
+f(3)

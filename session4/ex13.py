@@ -6,6 +6,15 @@
 """
 
 
-# decoarate me
+def change_f(func):
+    def wrapper():
+        return 'cmi'.upper()
+    return wrapper
+
+
+@change_f
 def f():
     return 'cmi'
+
+
+print(f())
