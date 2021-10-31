@@ -13,6 +13,7 @@ def write_output(func):
         file = open("output11.data", "w")
         file.write(func())
         return file.close()
+
     return wrapper()
 
 

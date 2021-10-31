@@ -22,15 +22,19 @@ import string
 
 
 def f(s):
-    file = open(f"{s}.json", 'w')
+    file = open(f"{s}.json", "w")
     d = {}
     for i in range(4):
         key_nb = int(random.choice(range(0, 11)))
         if key_nb in d.keys():
             key_nb = int(random.choice(range(0, 11)))
-        d[key_nb] = ''.join(random.choice(string.ascii_lowercase + string.digits) for _ in range(random.randint(3, 6)))
+        d[key_nb] = "".join(
+            random.choice(string.ascii_lowercase + string.digits)
+            for _ in range(random.randint(3, 6))
+        )
 
     file.write(str(d))
     file.close()
 
-f('tema')
+
+f("tema")

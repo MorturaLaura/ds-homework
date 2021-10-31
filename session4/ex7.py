@@ -18,4 +18,4 @@ def func(prefix, suffix, word):
     return prefix + word + suffix
 
 
-print(func('a', 'b', 'x'))
+print(func("a", "b", "x"))

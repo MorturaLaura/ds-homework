@@ -10,7 +10,7 @@
 
 
 def func(s):
-    return ''.join([(chr(ord(a) + 1)) for a in s])
+    return "".join([(chr(ord(a) + 1)) for a in s])
 
 
-print(func('aabbcc'))
+print(func("aabbcc"))

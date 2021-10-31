@@ -36,18 +36,18 @@ def add_suffix(sfx, rand_str):
 
 # Nu am spus ca stringul generat aleator trebuie sa contina toate literele
 def generate_random_str(str_length):
-    rand_str = ''
+    rand_str = ""
     while str_length:
         str_length -= 1
-        rand_str += random.choice(['a', 'x', 'c', 'm', 'i'])
+        rand_str += random.choice(["a", "x", "c", "m", "i"])
     print(f"The generated string is {rand_str}")
     return rand_str
 
 
-prefix = input('Give me an prefix\n')
-x = int(input('Give me a number to generate the random string\n'))
+prefix = input("Give me an prefix\n")
+x = int(input("Give me a number to generate the random string\n"))
 
-suffix = input('Give me an suffix\n')
+suffix = input("Give me an suffix\n")
 number_inputs = 1
 
 # o functie pt check letter prefix in suffix
@@ -61,11 +61,11 @@ while number_inputs != 4:
     if ok:
         break
     else:
-        suffix = input('Give me an suffix\n')
+        suffix = input("Give me an suffix\n")
         number_inputs += 1
     if number_inputs == 4:
-        suffix = ''
+        suffix = ""
 
 print(add_prefix(prefix, add_suffix(suffix, generate_random_str(x))))
 
-#print(add_suffix(suffix, generate_random_str(x)))
+# print(add_suffix(suffix, generate_random_str(x)))

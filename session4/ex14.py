@@ -15,8 +15,8 @@
 
 
 def get_me_numbers(x):
-    def multiply_by_5(x):
-        return x * 5
+    def multiply_by_5(nb):
+        return nb * 5
 
     return multiply_by_5(x + 5) + 3
 

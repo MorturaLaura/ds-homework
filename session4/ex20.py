@@ -8,7 +8,7 @@
 
 
 def read_from_file(file):
-    return open(file, 'r').read()
+    return open(file, "r").read()
 
 
-print(read_from_file('tema.json'))
+print(read_from_file("tema.json"))

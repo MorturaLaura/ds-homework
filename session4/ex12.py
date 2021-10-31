@@ -12,6 +12,7 @@ def write_output(func):
         file = open("output12.data", "w")
         file.write(a)
         return file.close()
+
     return wrapper
 
 
@@ -20,5 +21,4 @@ def f(x):
     print(x)
 
 
-f('Hello')
-
+f("Hello")

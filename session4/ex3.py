@@ -21,4 +21,3 @@ def func(x):
 
 
 print(func(3))
-

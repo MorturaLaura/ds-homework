@@ -9,7 +9,7 @@
 
 
 def f():
-    print('cmi')
+    print("cmi")
 
 
 g = f
